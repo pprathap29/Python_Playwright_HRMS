@@ -6,7 +6,7 @@ def test_hrms():
         browser = playwright.firefox.launch(headless=False)
         context  = browser.new_context()
         page = context.new_page()
-        page.goto("file:///C:/Users/yuva%20tpt/Downloads/hrms-20260623T033342Z-3-001/hrms/index.html")
+        page.goto("file:///C:/Users/yuva%20tpt/Downloads/hrms-20260626T034540Z-3-001/hrms/index.html",wait_until="load")
         page.wait_for_load_state("load")
         page.get_by_role("textbox",name="username").fill("admin")
         page.get_by_role("textbox",name="password").fill("admin123")
